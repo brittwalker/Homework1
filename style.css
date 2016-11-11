@@ -12,26 +12,29 @@ body {
   top: 0;
   left: 0;
   position: fixed;
+  z-index: 2;
 }
 #nav li {
   color: white;
   display: inline-block;
   font-family: Verdana;
   text-align: center;
-  padding: 10px 20px;
+  font-size: 14px;
+  padding: 10px 0px 0px 0px;
 }
-a {
+li a {
   color: white;
   text-decoration: none;
+  display: block;
+  width: 100px;
 }
 #bg {
   background-image:url("tech.jpg");
   height:300px;
   width:100%;
-  margin-top: 39px;
+  margin-top: 35px;
   position: relative;
   padding-top: 35px;
-  display: block;
 }
 #circle {
   border-radius: 50%;
@@ -40,8 +43,9 @@ a {
   border-color: lightblue;
   width: 200px;
   height: 200px;
-  background-image: url("profile.jpg");
-  background-size: contain;
+  background-image: url("britt.jpg");
+  background-size: cover;
+  background-position:50% 25%;
   margin: 0 auto;
   position: relative;
 }
@@ -67,6 +71,20 @@ h1, h2, h3, h4, p {
   margin-left: 10px;
   margin-right: 10px;
 }
-#joe {
+#sub {
   margin-top:-20px;
+}
+p:not(#intro) {
+  margin-top:-15px;
+}
+.activepage, li a:hover {
+  color: lightblue;
+  border-bottom-style: double;
+  border-bottom-color: lightblue;
+  border-bottom-width: 5px;
+  padding-bottom: 5px;
+}
+
+h2 {
+  margin-top:0px;
 }
