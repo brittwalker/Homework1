@@ -121,6 +121,7 @@ h2 {
   display: inline-block;
   position: relative;
   overflow: hidden;
+  vertical-align: top;
 }
 
 #pic1 {
