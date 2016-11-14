@@ -45,9 +45,14 @@ li a {
   padding-top: 50px;
 }
 
-h1, h2, h3, h4, p, .desc {
+h1, h2, h3, h4, p {
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.desc {
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 p:not(#intro) {
@@ -67,6 +72,7 @@ h2 {
   position: relative;
   padding-top: 35px;
 }
+
 #circle {
   border-radius: 50%;
   border-style: solid;
