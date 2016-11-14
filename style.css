@@ -109,9 +109,7 @@ h2 {
 /* portfolio styles */
 #portcontainer {
   width: 100%;
-  display: inline-block;
   text-align: center;
-  position: relative
 }
 
 .photo {
@@ -147,8 +145,7 @@ img {
   width: 200px;
   height: 200px;
   background: rgba(255,255,255,0);
-  display: inline-block;
-  z-index: 2;
+  z-index: 1;
 }
 
 .photo:hover .overlay {
@@ -156,7 +153,7 @@ img {
 }
 
 .photo:hover .overlay .ptext{
-  color:white;
+  color: white;
 }
 
 .ptext {
@@ -165,10 +162,10 @@ img {
   text-align: center;
   color: rgba(0,0,0,0);
   text-decoration: none;
-  display: inline-block;
   padding-top: 25px;
-  padding-left: 10px;
-  padding-right: 10px;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 h4 {
