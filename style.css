@@ -1,7 +1,9 @@
+/* general styles */
 body {
   font-family: Verdana,sans-serif;
   margin: 0px;
 }
+
 #nav {
   background-color: black;
   width: 100%;
@@ -14,6 +16,7 @@ body {
   position: fixed;
   z-index: 2;
 }
+
 #nav li {
   color: white;
   display: inline-block;
@@ -22,12 +25,40 @@ body {
   font-size: 14px;
   padding: 10px 0px 0px 0px;
 }
+
 li a {
   color: white;
   text-decoration: none;
   display: block;
   width: 100px;
 }
+
+.activepage, li a:hover {
+  color: lightblue;
+  border-bottom-style: double;
+  border-bottom-color: lightblue;
+  border-bottom-width: 5px;
+  padding-bottom: 5px;
+}
+
+#experience, #portfolio {
+  padding-top: 50px;
+}
+
+h1, h2, h3, h4, p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+p:not(#intro) {
+  margin-top:-15px;
+}
+
+h2 {
+  margin-top:0px;
+}
+
+/* about me styles */
 #bg {
   background-image:url("tech.jpg");
   height:300px;
@@ -49,11 +80,13 @@ li a {
   margin: 0 auto;
   position: relative;
 }
+
 #strapline {
   color: white;
   text-align: center;
   position: relative;
 }
+
 #strapline h1 {
   font-size: 24px;
   padding-top: -10px;
@@ -64,27 +97,82 @@ li a {
   padding-top: 5px;
 }
 
-#experience {
-  padding-top: 50px;
-}
-h1, h2, h3, h4, p {
-  margin-left: 10px;
-  margin-right: 10px;
-}
 #sub {
   margin-top:-20px;
 }
-p:not(#intro) {
-  margin-top:-15px;
-}
-.activepage, li a:hover {
-  color: lightblue;
-  border-bottom-style: double;
-  border-bottom-color: lightblue;
-  border-bottom-width: 5px;
-  padding-bottom: 5px;
+
+#intro {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
-h2 {
-  margin-top:0px;
+/* portfolio styles */
+#portcontainer {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  position: relative
 }
+
+.photo {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border-style: solid;
+  border-width: 5px;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+#pic1 {
+  background-image: url("portfolio_deliverable.png");
+  background-size: 100% 100%;
+}
+
+#pic2 {
+  background-image: url("citipix_deliverable.png");
+  background-size: cover;
+  background-position: 20%;
+}
+
+img {
+  position: absolute;
+  max-height: 100%;
+  left: -5px;
+  z-index: -1;
+}
+
+.overlay {
+  width: 200px;
+  height: 200px;
+  background: rgba(255,255,255,0);
+  display: inline-block;
+  z-index: 2;
+}
+
+.photo:hover .overlay {
+  background: rgba(0,0,0,.8);
+}
+
+.photo:hover .overlay .ptext{
+  color:white;
+}
+
+.ptext {
+  font-family: Verdana;
+  font-size: 12px;
+  text-align: center;
+  color: rgba(0,0,0,0);
+  text-decoration: none;
+  display: inline-block;
+  padding-top: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+h4 {
+  padding-bottom: 10px;
+}
+
+/* end styles */
